@@ -1,0 +1,14 @@
+Lab Exam 2 (Lab 6)
+- Creating classes
+- Constructors
+- Accessors, mutators
+- Other functions
+- Using the class
+	• Instantiate
+	• Fill
+	• Make collections
+	• Printing
+	• Math, comparisons
+
+Look at module 3/4 - First class version of AmazonLite ordering system (Customer, Customers)
+Same sort of stuff as Hwk 3

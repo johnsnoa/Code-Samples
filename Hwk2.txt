@@ -1,0 +1,96 @@
+Plane - Planes
+CrewMember - CrewMembers
+Flight - Flights
+
+Plane
+	Make
+		Set/Get
+	Model
+		Set/Get
+	Tail Number
+		Set/Get
+	Number of Seats
+		Set/Get
+	Range
+		Set/Get
+	Minimum cabin crew number
+		Set/Get
+Planes
+	Array of Planes
+		Add
+		Edit
+		Remove
+		Search
+		Sort
+		Print single
+		Print all
+		
+CrewMember
+	Name
+		Get/Set
+	ID number
+		Get/Set
+	Type
+		Get/Set
+CrewMembers
+	Array of CrewMembers
+		Add
+		Edit
+		Remove
+		Search
+		Sort
+		Print single
+		Print all
+	
+Flight
+	Plane tail number
+		Get/Set
+	Number of pilots
+		Calculate num of pilots
+		Get/Set
+	Number of crew
+		Calculate num of crew
+		Get/Set
+	List of Pilot IDs
+		Check pilot availability
+		Set/Get
+	List of crew IDs
+		Check crew availability
+		Set/Get
+	Start DateTime
+		Set/Get
+	End DateTime
+		Set/Get
+		Calculate duration of flight
+	Starting Airport code
+		Set/Get
+	Ending Airport code
+		Set/Get
+	Number of passengers
+		Check passengers based on plane capacity
+	Status
+		Set/Get
+		Update based on time
+Flights
+	Array of Flights
+		Add
+		Edit
+		Remove
+		Search
+		Sort
+		Print single
+		Print all
+	
+	
+a p Boeing 747 B171A 137 800 4
+e p B171A crew 3
+r p B171A
+
+a c Smith.Joe 1 p
+a c James.Arin 2 p
+a c Madison.Ronald 3 c
+a c Avery.Lawrence 4 c
+a c Rawlins.Christian 5 c
+
+a f B171A 9/19/19.03.45 9/19/19.07.45 1 2 3 4 5 DFW IAH 123 A
+e f B171A 9/19/19.03.45 status X

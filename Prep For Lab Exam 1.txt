@@ -1,0 +1,47 @@
+Always include <stdio.h> and <stdlib.h>
+
+Structures
+struct Student {
+	int a;
+	int b;
+	int c;
+	char* n;
+}; <- remember that classes and structs both end with semicolons. default access for classes is private so always use public: and private:
+
+if using gcc to compile:
+	struct Student s;
+if using g++:
+	Student s;
+
+
+Strings
+char* str = (char*) malloc(16*sizeof(char));
+char str[16];
+
+use getline(cin, name) to get whole lines instead of single words, as cin will stop at any whitespace.
+
+
+Pointers
+int *ptr = new int(25);  //delete ptr;
+int *ptr2 = new int[10]; //delete[] ptr2;
+
+
+Dynamic memory management
+void* malloc(size_t size);
+for a 16-character C-string (incl. \0):
+char *name = (char*) malloc(16*sizeof(char));
+
+void free(void* ptr);
+for any pointer:
+free(name);
+
+void* realloc(void* ptr, size_t size);
+for a 16-character C-string to 8-length:
+name = (char*) realloc(name, 8*sizeof(char));
+
+delete:
+int* array = new int[16];
+delete[] array;
+
+Student s = new Student();
+delete s;
